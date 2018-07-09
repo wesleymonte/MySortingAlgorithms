@@ -13,7 +13,7 @@ public class Util {
 	
 	public static boolean validateInput(Object[] array, int leftIndex, int rightIndex) {
 		boolean valid = false;
-		if(array != null && rightIndex < array.length && leftIndex >= 0 && rightIndex > leftIndex) {
+		if(array != null && array.length > 1 && rightIndex < array.length && leftIndex >= 0 && rightIndex > leftIndex) {
 			valid = true;
 		}
 		return valid;

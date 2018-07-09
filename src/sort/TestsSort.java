@@ -5,12 +5,13 @@ import java.util.Arrays;
 import algorithms.BubbleSort;
 import algorithms.InsertionSort;
 import algorithms.SelectionSort;
+import algorithms.SimultaneousBubbleSort;
 import algorithms.SimultaneousSelectionsort;
 
 public class TestsSort {
 
 	public static void main(String[] args) {
-		AbstractSort<Integer> sorting = new SimultaneousSelectionsort<Integer>();
+		AbstractSort<Integer> sorting = new SimultaneousBubbleSort<Integer>();
 		Integer[] array1 = {3, 90, 4, 1, 100, 99, 85, 0, 2};
 		sorting.sort(array1, 3, 7);
 		System.out.println(Arrays.toString(array1));
