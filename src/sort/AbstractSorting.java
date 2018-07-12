@@ -1,6 +1,6 @@
 package sort;
 
-public abstract class AbstractSort<T extends Comparable<T>> implements Sort<T> {
+public abstract class AbstractSorting<T extends Comparable<T>> implements Sort<T> {
 	
 	@Override
 	public void sort(T[] array) {

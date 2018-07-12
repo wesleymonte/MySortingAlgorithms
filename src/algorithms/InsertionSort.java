@@ -1,9 +1,9 @@
 package algorithms;
 
-import sort.AbstractSort;
+import sort.AbstractSorting;
 import util.Util;
 
-public class InsertionSort<T extends Comparable<T>> extends AbstractSort<T> {
+public class InsertionSort<T extends Comparable<T>> extends AbstractSorting<T> {
 
 	@Override
 	public void sort(T[] array, int leftIndex, int rightIndex) {
