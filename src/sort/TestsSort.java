@@ -8,7 +8,7 @@ import algorithms.MergeSort;
 import algorithms.QuickSort;
 import algorithms.SelectionSort;
 import algorithms.SimultaneousBubbleSort;
-import algorithms.SimultaneousSelectionsort;
+import algorithms.SimultaneousSelectionSort;
 
 public class TestsSort {
 

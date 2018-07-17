@@ -11,6 +11,10 @@ import org.junit.Test;
 import algorithms.BubbleSort;
 import algorithms.InsertionSort;
 import algorithms.MergeSort;
+import algorithms.QuickSort;
+import algorithms.SelectionSort;
+import algorithms.SimultaneousBubbleSort;
+import algorithms.SimultaneousSelectionSort;
 
 public class SortingTest {
 
@@ -32,7 +36,7 @@ public class SortingTest {
 	}
 	
 	private void getImplemetation() {
-		this.implementation = new MergeSort<Integer>();
+		this.implementation = new SimultaneousSelectionSort<Integer>();
 	}
 
 	public void populateEvenLengthArray(Integer[] array) {
@@ -67,10 +71,8 @@ public class SortingTest {
 			copy1 = Arrays.copyOf(array, array.length);			
 		}
 		implementation.sort(array, leftIndex, rightIndex);
-		Arrays.sort(copy1, leftIndex, rightIndex);
+		Arrays.sort(copy1, leftIndex, rightIndex + 1);
 		Assert.assertArrayEquals(copy1, array);
-		System.out.println(Arrays.toString(copy1));
-		System.out.println(Arrays.toString(array));
 	}
 	
 	@Test
@@ -105,10 +107,6 @@ public class SortingTest {
 	
 	@Test
 	public void testSortOddArray03() {
-		/**
-		this.implementation.sort(oddLengthArray, 0, 5);
-		System.out.println(Arrays.toString(this.oddLengthArray));
-		*/
 		genericTest(oddLengthArray, 0, 5);
 	}
 	

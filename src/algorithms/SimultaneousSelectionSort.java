@@ -3,7 +3,7 @@ package algorithms;
 import sort.AbstractSorting;
 import util.Util;
 
-public class SimultaneousSelectionsort<T extends Comparable<T>> extends AbstractSorting<T> {
+public class SimultaneousSelectionSort<T extends Comparable<T>> extends AbstractSorting<T> {
 
 	@Override
 	public void sort(T[] array, int leftIndex, int rightIndex) {
