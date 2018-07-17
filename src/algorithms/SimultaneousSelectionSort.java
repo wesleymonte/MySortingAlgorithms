@@ -21,6 +21,9 @@ public class SimultaneousSelectionSort<T extends Comparable<T>> extends Abstract
 					}
 				}
 				Util.swap(array, smaller, leftIndex + i);
+				if(leftIndex + i == bigger) {
+					bigger = smaller;
+				}
 				if(!(bigger == leftIndex + i && rightIndex - i == smaller)) {
 					Util.swap(array,  bigger, rightIndex - i);
 				}
