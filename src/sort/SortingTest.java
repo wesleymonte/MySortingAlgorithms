@@ -15,6 +15,7 @@ import algorithms.QuickSort;
 import algorithms.SelectionSort;
 import algorithms.SimultaneousBubbleSort;
 import algorithms.SimultaneousSelectionSort;
+import algorithms.ThreeWayQuickSort;
 
 public class SortingTest {
 
@@ -36,7 +37,7 @@ public class SortingTest {
 	}
 	
 	private void getImplemetation() {
-		this.implementation = new SimultaneousSelectionSort<Integer>();
+		this.implementation = new ThreeWayQuickSort<Integer>();
 	}
 
 	public void populateEvenLengthArray(Integer[] array) {
