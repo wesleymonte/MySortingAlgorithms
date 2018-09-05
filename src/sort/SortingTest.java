@@ -9,7 +9,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 import algorithms.BubbleSort;
+import algorithms.CombSort;
 import algorithms.CountingSort;
+import algorithms.GnomeSort;
 import algorithms.InsertionSort;
 import algorithms.MergeSort;
 import algorithms.QuickSort;
@@ -38,7 +40,7 @@ public class SortingTest {
 	}
 	
 	private void getImplemetation() {
-		this.implementation = new CountingSort();
+		this.implementation = new CombSort<Integer>();
 	}
 
 	public void populateEvenLengthArray(Integer[] array) {
